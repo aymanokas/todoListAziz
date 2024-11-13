@@ -21,8 +21,8 @@ function Todolist() {
          else{
           e.target.classList.add('worng');
           setanswr(true);
-          const res=correctarray[Guestion.ans-1].current;
-          res.classList.add('correct');
+           //@ts-ignore
+          correctarray[Guestion.ans-1].current.classList.add('correct');
          }
       }
    }
